@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>Java Form</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="js.js"></script>
+        
     </head>
     <body>
-        <h1>HTML First Assignment</h1>
+        <header>
+        <h1>Java Assignment 1</h1>
+        </header>
+        
+        <section>
+            <h2>Form Section</h2>
+            
+            <form action="" method="GET">
+                <label for="emailInput" >Email</label><br />
+                <input type="text" name="emailInput" id="emailInput"
+                       autofocus="autofocus" accesskey="E" />
+                <br />
+
+                <label for="password" >Password</label><br />
+                <input type="password" name="password" 
+                       id="password" accesskey="P" />
+                <br />
+
+                <label for="language">Language</label>
+                <select name="language" id="language">
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="german">German</option>
+                  <option value="french">French</option>
+                  <option value="klingon">Klingon</option>
+                  <option value="vulcan">Vulcan</option>
+                  <option value="romulan">Romulan</option>
+                </select>
+                <br />
+
+                <fieldset>
+                    <legend>Select A Ship</legend>
+                    <input type="radio" id="enterprise" name="ship" value="enterprise">
+                    <label for="enterprise">Enterprise</label>&nbsp;&nbsp;
+                    <input type="radio" id="klingon" name="ship" value="klingonBirdOfPrey">
+                    <label for="klingon">Klingon Bird of Prey</label>&nbsp;&nbsp;
+                    <input type="radio" id="vulcan" name="ship" value="suurokClass">
+                    <label for="vulcan">Suurok-class</label>&nbsp;&nbsp;
+                    <input type="radio" id="romulan" name="ship" value="scimitar">
+                    <label for="ronulan">Scimitar</label>
+                </fieldset>
+                <br />
+
+                <input type="submit" value="Submit" onclick="doNothing()">
+                <input type="button" value="Reset" onclick="resetPage()">
+                <br />
+            </form>
+        </section>
+        
+        <section>
+            <h2>Image and Link Section</h2>
+            <img src="https://i.pinimg.com/originals/73/a0/c6/73a0c654608af9a7d6ea43b15ed83ca8.jpg" name="Enterprise Ship Models" alt="Enterprise Ship Models" height="25" width="25">
+            <p>Click here for the <a href="https://memory-alpha.fandom.com/wiki/Portal:Main" target="_blank">Star Trek Wiki</a></p>
+           
+        </section>
+        
+        <footer>
+            Copyright &copy; <script>document.write( new Date().getFullYear() );</script>
+            <!-- Found this code https://www.thesitewizard.com/javascripts/insert-current-year.shtml -->
+        </footer>
     </body>
 </html>

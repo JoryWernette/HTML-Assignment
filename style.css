@@ -1,0 +1,22 @@
+/* 
+    Created on : Jan 29, 2021, 11:53:36 AM
+    Author     : jorya
+*/
+header{
+    background-color: black;
+    color: white;
+}
+h1{
+    font-size: 3em;
+}
+body{
+}
+img{
+    width: 25em;
+    height: 25em;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
